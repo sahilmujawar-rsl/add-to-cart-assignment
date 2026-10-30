@@ -13,3 +13,5 @@ export interface CheckoutResult {
   items: CartItem[];
   total: number;
 }
+
+export type CheckoutStatus = 'idle' | 'submitting' | 'success' | 'error';
