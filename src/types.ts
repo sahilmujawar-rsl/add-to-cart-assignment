@@ -9,9 +9,7 @@ export interface CartItem extends Product {
 }
 
 export interface CheckoutResult {
-  id: string;
+  id: string | number;
   items: CartItem[];
   total: number;
 }
-
-export type CheckoutStatus = 'idle' | 'submitting' | 'success' | 'error';
